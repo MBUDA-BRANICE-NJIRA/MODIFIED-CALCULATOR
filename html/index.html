@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!--!       DARK MODE    -->
+    <!-- <button type="button" class="dark-theme btn btn-outline-dark" onclick="changeTheme()">Dark Mode</button> -->
+    <br><br><br>
+    <div class="main-body text-center border border-2 p-3 border-info border-opacity-25 rounded-4 bg-light"><br>
+        <h3 class="text-primary">Calculator</h3>
+        <br>
+        <br>
+        <!--!-------------- input field -->
+        <input type="text" name="display" class="input-sector border border-1 border-info rounded rounded-1"></><br>
+
+        <!--!--------- CONTENTS ---------------->
+        <div class="firstRow row mt-4">
+            <button type="button" value="1" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('1')">
+                1
+            </button>
+            <button type="button"  class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('2')">
+                2
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('3')">3
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-dark" onclick="displayUserInput(' * ')">&times;</button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('4')">4
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('5')">
+                5
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('6')">
+                6
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-dark" onclick="displayUserInput(' + ')">&plus;</button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('7')">
+                7
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('8')">
+                8
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('9')">
+                9
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-dark" onclick="displayUserInput(' / ')"> &divide;</button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('0')">
+                0
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-outline-primary" onclick="displayUserInput('.')">
+                .
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-danger" onclick="clearSreen()">
+                clear
+
+            </button>
+            <button type="button" class="col-md-3 input-btn btn btn-dark" onclick="displayUserInput(' - ')">
+                &minus;
+            </button>
+        </div>
+
+        <button class="equal-sign mt-4 mb-4 btn btn-info" onclick="calculate()">&equals;</button>
+    </div>
+    <script src="/js/calculator.js"></script>
+</body>
+
+</html>
